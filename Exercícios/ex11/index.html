@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir em diversos dispositivos</p>
+
+    <picture>
+        <!-- Imagem para dispositivos com largura até 750px -->
+        <source media="(max-width: 750px)" srcset="foto-p.png">
+        <!-- Imagem para dispositivos com largura até 1050px -->
+        <source media="(max-width: 1050px)" srcset="foto-m.png">
+        <!-- Imagem padrão para dispositivos maiores -->
+        <img src="foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Aúdios</h1>
+   
+ <audio src="midia/Get Over It.mp3" controls ></audio>
+ <p>A tag audio permite a inclusão de arquivos de áudio, com os atributos mais importantes sendo: <br>
+    src: Define o caminho do arquivo de áudio.
+    controls: Exibe controles de reprodução (play, pause, volume). <br>
+    autoplay: Reproduz automaticamente ao carregar a página.
+    loop: Reproduz o áudio em loop. <br>
+    muted: Começa o áudio sem som.
+    preload: Especifica se o áudio deve ser carregado ao carregar a página (valores: "auto", "metadata", "none").</p>
+</body>
+</html>

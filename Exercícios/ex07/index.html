@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicons</title>
+</head>
+<body>
+    <h2>Como mudar e criar favicons:</h2>
+    <p>
+        Favicons são ícones pequenos que aparecem na aba do navegador, na barra de favoritos e ao lado do título da página. Para criar e adicionar um favicon, siga os passos abaixo:
+    </p>
+
+    <h3>1. Criar ou encontrar um favicon:</h3>
+    <ul>
+        <li><strong>Sites para encontrar ícones:</strong> Você pode usar sites como <a href="https://iconarchive.com/" target="_blank">IconArchive</a> para encontrar ícones prontos para o uso.</li>
+        <li><strong>Editar a imagem:</strong> Caso queira editar o ícone, utilize o <a href="https://www.gimp.org" target="_blank">GIMP</a> para ajustar a imagem ao tamanho necessário (normalmente 16x16, 32x32 ou 64x64 pixels).</li>
+    </ul>
+
+    <h3>2. Como adicionar o favicon ao seu site:</h3>
+    <p>
+        Para adicionar o favicon à sua página HTML, você deve utilizar a tag <code>&lt;link&gt;</code> no <code>&lt;head&gt;</code> do seu documento HTML. O código abaixo mostra como fazer isso:
+    </p>
+    <pre>
+        <code>
+            &lt;link rel="icon" href="caminho/para/o/favicon.ico" type="image/x-icon"&gt;
+        </code>
+    </pre>
+    <p>
+        Onde <code>href="caminho/para/o/favicon.ico"</code> deve ser substituído pelo caminho da sua imagem de favicon. A extensão comum é ".ico", mas também pode ser usado ".png" ou ".jpg", dependendo do formato da sua imagem.
+    </p>
+
+    <h3>3. Dicas importantes:</h3>
+    <ul>
+        <li><strong>Resolução do ícone:</strong> Favicons geralmente têm 16x16, 32x32 ou 64x64 pixels. O ideal é ter várias resoluções para diferentes dispositivos e navegadores.</li>
+        <li><strong>Teste em diferentes navegadores:</strong> Após adicionar o favicon, teste a página em diferentes navegadores para garantir que o ícone seja exibido corretamente.</li>
+        <li><strong>Cache:</strong> Em alguns casos, o navegador pode armazenar em cache o favicon antigo. Para forçar o navegador a carregar o novo ícone, você pode limpar o cache ou alterar o nome do arquivo do favicon.</li>
+    </ul>
+</body>
+</html>

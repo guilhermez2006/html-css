@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 07</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem correta para o tamanho da sua tela? Experimente redimensionar a janela para testar!</p>
+
+    <picture>
+        <!-- Imagem PEQUENA para telas PEQUENAS -->
+        <source media="(max-width:600px)" srcset="imagens/paisagem-p.png">
+
+        <!-- Imagem MÉDIA para telas INTERMEDIÁRIAS/ Utilizando min e max width. -->
+        <source media="(min-width:601px) and (max-width:1200px)" srcset="imagens/paisagem-m.png">
+
+        <!-- Imagem GRANDE para telas GRANDES -->
+        <source media="(min-width:1201px)" srcset="imagens/paisagem-g.png">
+
+        <!-- Fallback, caso as condições acima falhem -->
+        <img src="imagens/paisagem-p.png" alt="Imagem padrão">
+    </picture>
+</body>
+</html>

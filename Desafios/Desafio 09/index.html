@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos legais</title>
+    <style>
+        /* Remover bolinhas (marcadores) e o preenchimento padrão da lista */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid; /* Usando grid para criar layout 2x2 */
+            grid-template-columns: 1fr 1fr; /* Duas colunas */
+            gap: 5px; /* Pequeno espaço entre as imagens */
+            max-width: 500px; /* Limita a largura máxima */
+            margin: 20px auto; /* Centraliza a lista na página */
+        }
+
+        li {
+            width: 100%; /* Garante que cada item ocupe toda a largura disponível */
+            text-align: center; /* Centraliza as imagens */
+        }
+
+        img {
+            width: 100%; /* A imagem ocupa toda a largura do item */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove qualquer espaçamento abaixo da imagem */
+        }
+
+        h1 {
+            text-align: center; /* Centraliza o título na página */
+            margin-bottom: 20px; /* Espaço entre o título e as imagens */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Vídeos legais para assistir</h1>
+    <ul>
+        <!-- Links para as thumbs, que irão redirecionar para a página de vídeo -->
+        <li><a href="video1.html">
+                <img src="midia/thumb-hardware.png" alt="Curso de hardware">
+            </a></li>
+        <li><a href="video2.html">
+                <img src="midia/thumb-html.png" alt="Curso de Html5">
+            </a></li>
+        <li><a href="video3.html">
+                <img src="midia/thumb-js.png" alt="Curso de Js">
+            </a></li>
+        <li><a href="video4.html">
+                <img src="midia/thumb-python.png" alt="Curso de Python">
+            </a></li>
+    </ul>
+
+</body>
+
+</html>

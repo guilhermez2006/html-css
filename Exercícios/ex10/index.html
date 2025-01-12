@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Configuração Global, ID e Class</title>
+</head>
+<body>
+    <h2>Configuração Global</h2>
+    <p>
+        A <strong>configuração global</strong> no CSS, utilizando o seletor universal (<code>*</code>), permite aplicar estilos a todos os elementos de uma página de forma abrangente. Essa abordagem é muito útil para padronizar características iniciais de todos os elementos, como:
+    </p>
+    <ul>
+        <li><strong>Margens:</strong> Remove as margens padrão de elementos.</li>
+        <li><strong>Paddings:</strong> Remove o preenchimento padrão de elementos.</li>
+        <li><strong>Bordas:</strong> Remove bordas padrões que podem ser aplicadas em alguns elementos.</li>
+        <li><strong>Box-sizing:</strong> Define o comportamento da caixa de conteúdo.</li>
+    </ul>
+    <p>
+        Um exemplo de configuração global seria:
+    </p>
+    <pre>
+        <code>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        </code>
+    </pre>
+    <p>
+        Essa configuração remove os espaços padrão dos elementos e garante que o modelo de caixa seja consistente em todos os navegadores, evitando problemas como o "deslocamento" de elementos. No entanto, é importante utilizar o seletor universal com cuidado, pois:
+    </p>
+    <ul>
+        <li><strong>Desempenho:</strong> Pode impactar o desempenho em páginas complexas, pois aplica regras a todos os elementos da página.</li>
+        <li><strong>Especificidade:</strong> O uso do seletor universal pode sobrescrever estilos mais específicos definidos para determinados elementos.</li>
+    </ul>
+
+    <h2>Id e Class</h2>
+    <p>
+        As <strong>tags <code>id</code> e <code>class</code></strong> são formas fundamentais de selecionar e aplicar estilos específicos a elementos HTML:
+    </p>
+
+    <h3>1. <code>id</code></h3>
+    <p>
+        O atributo <strong>id</strong> é único em uma página, ou seja, cada <code>id</code> deve ser atribuído a apenas um elemento HTML. Ele é utilizado para identificar elementos específicos e, geralmente, é usado para:
+    </p>
+    <ul>
+        <li><strong>Aplicar estilos exclusivos:</strong> Como cada <code>id</code> é único, ele é muito eficaz para aplicar estilos específicos a um único elemento.</li>
+        <li><strong>Facilitar a manipulação via JavaScript:</strong> Como o <code>id</code> é único, é fácil selecionar e manipular um único elemento com JavaScript.</li>
+    </ul>
+    <p>
+        Exemplo de uso do <code>id</code>:
+    </p>
+    <pre>
+        <code>
+            #menu {
+                background-color: #333;
+                color: white;
+            }
+        </code>
+    </pre>
+    <p>
+        Neste exemplo, o <code>id</code> "menu" é usado para estilizar um elemento específico.
+    </p>
+
+    <h3>2. <code>class</code></h3>
+    <p>
+        O atributo <strong>class</strong> pode ser atribuído a múltiplos elementos em uma página. Ele é ideal para quando você deseja aplicar o mesmo estilo a vários elementos. Ao contrário do <code>id</code>, que é único, o <code>class</code> pode ser reutilizado em diversos elementos.
+    </p>
+    <ul>
+        <li><strong>Reutilização de estilos:</strong> Ideal para aplicar os mesmos estilos a múltiplos elementos.</li>
+        <li><strong>Facilidade em combinar estilos:</strong> Você pode atribuir múltiplas classes a um único elemento, permitindo maior flexibilidade.</li>
+    </ul>
+    <p>
+        Exemplo de uso do <code>class</code>:
+    </p>
+    <pre>
+        <code>
+            .botao {
+                background-color: #008CBA;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+        </code>
+    </pre>
+    <p>
+        Neste exemplo, a classe "botao" pode ser atribuída a vários elementos, como botões, para dar a eles o mesmo estilo.
+    </p>
+</body>
+</html>
