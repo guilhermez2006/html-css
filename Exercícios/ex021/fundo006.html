@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             background-color: black;
@@ -11,14 +11,18 @@
             background-position: center top;
             background-repeat: no-repeat;
             background-position: cover; /*Faz a imagem ocupar 100% da tela, mesmo que corte ela*/
+
+            /*Shorthand - Backgroun
+            color - image - position - repeat - {size} - attachment*/
         }
         main {
            background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+            background-attachment: scroll;
         }
     </style>
 </head>
